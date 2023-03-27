@@ -1,0 +1,106 @@
+<!--need !DOCTYPE for all html files-->
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <!--viewport for user's browser -typical setting (from mozilla)-->
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width = device-width, initial-scale = 1.0" />
+
+        <link rel="icon" type="image/png" sizes="32x32" href=".images/favicon-32x32.png" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Montserrat:ital,wght@0,100;0,400;1,900&family=Outfit:wght@400;700&family=Rubik:wght@400;500;700&family=Ubuntu&display=swap"
+          rel="stylesheet"
+        />
+
+        <title> QR code </title>
+        <!-- style contains info for a document i.e. color 
+            can be placed (ideally) in external stylesheets to be <link> elements
+            * is used for all elements 
+        -->     
+
+        <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0; 
+        }
+        
+        p {
+            font-size: 15px;
+            color: hsl(220, 15%, 55%);
+            text-align: center; 
+            width: 250px; 
+        }
+
+        body {
+            font-family: 'Outfit';
+            background: hsl(212, 45%, 89%);
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        img {
+            border-radius: 10px;
+            width: 288px;
+        }
+
+        .container {
+            width: 320px;
+            height: 480px;
+            margin: 80px 0px;
+            padding: 1em;
+            
+            border: 1px solid white;
+            border-radius: 20px;
+            background: white;
+            text-align: center;
+            
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .text {
+            padding-top: 1em;
+        }
+
+        .title {
+            font-size: 1.5em;
+        }
+
+        .instructions {
+            color: hsl(220, 15%, 55%);
+            width: 265px;
+            margin: 0px 10px;
+        }
+
+        .attribution {
+            font-size: 11px;
+        }
+
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
+        </style>
+    </head>
+    <body>
+        <main class = "container">
+            <img src="images/image-qr-code.png" alt="QR-Code">
+            <h1> Basic QR-code </h1>
+            <p class="text"> 
+                Scan the QR code to visit Frontend Mentor for some coding skills challenges
+            </p>
+        </main>
+
+        <div class="attribution"> 
+            Challenge by
+            <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" >Frontend Mentor</a>.
+            Coded by <a href="https://github.com/patrick1115/QR_code" >Patrick</a>
+        </div>
+    </body>
+</html>
